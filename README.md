@@ -6,7 +6,7 @@ Ejercicio del bootcamp de backend de GeeksHubs
 La idea de este ejercicio es practicar el uso de promesas en Javascript, junto con la sintaxis async/await.
 
 
-- [Installation](#installation)
+- [Instalación](#instalacion)
 - [Features](#features)
 - [Contributing](#contributing)
 - [Team](#team)
@@ -17,7 +17,7 @@ La idea de este ejercicio es practicar el uso de promesas en Javascript, junto c
 
 ---
 
-## Installation
+## instalacion
 
 - Todo el código es necesario para iniciar el proyecto
 - La imagenes, y sinposis de las peliculas son provehidas por The Movie DB
