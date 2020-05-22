@@ -112,6 +112,23 @@ const getPeliculasPopulares4 = async () => {
     escribeTiempos("fin")
 };
 
+
+
+const buscaPeli =  async () => {
+    var text = document.getElementById("buscarTitulo").value;
+    document.getElementById("buscarTitulo").value = '';
+    document.querySelector('div#listado').innerHTML = "";
+    
+    fetch(`https://api.themoviedb.org/3/search/movie?query=${text}&api_key=cea68b520beecac6718820e4ac576c3a&language=es-ES&page=1&include_adult=false`)
+    .then(res=>res.json())
+    .then(res=>{
+        const peliculas = res.results
+        dibujaPelis(peliculas);
+    })
+    .catch(error=>console.error(error))
+}
+
+
 console.log("Ready...");
 
 

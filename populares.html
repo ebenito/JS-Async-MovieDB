@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Movie DB Searcher</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="functions.js"></script>
+</head>
+<body>
+    <h1>The movie DB Searcher</h1>
+    <h2>Obtener el listado de las peliculas más populares.</h2>
+    <div class="buscar">        
+        <button type="button" class="botonBuscar" onclick="parent.location='index.html'">Volver</button>
+        <button type="button" class="botonBuscar" onclick="muestraPeliculas(1)">fetch / promesas</button>
+        <button type="button" class="botonBuscar" onclick="muestraPeliculas(2)">fetch / async - await</button>
+        <button type="button" class="botonBuscar" onclick="muestraPeliculas(3)">axios / promesas</button>
+        <button type="button" class="botonBuscar" onclick="muestraPeliculas(4)">axios / async - await</button>
+        <div id="tiempos">
+            <table border="1">
+                <th colspan="3">Tiempos de ejecución en ms.</th>
+                <tr>
+                    <td>Inicio</td>
+                    <td>Fin</td>
+                    <td>Diferencia</td>
+                </tr>
+                <tr>
+                    <td id="inicio">0</td>
+                    <td id="fin">0</td>
+                    <td id="diferencia">0</td>
+                </tr>
+            </table>
+            <!-- <span id="inicio">Incio:</span><br />
+            <span id="fin">Fin:</span> -->
+        </div> 
+    </div>
+
+    <div id="listado" />
+</body>
+</html>
