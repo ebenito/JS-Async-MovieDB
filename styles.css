@@ -1,0 +1,76 @@
+
+.buscar {
+    display: flex;
+    justify-content: left;
+    margin-top: 2em;
+    font-size: large;
+}
+.botonBuscar {
+    margin-left: 1em;
+    display: flex;
+    align-items: left;
+    background-color: #2c2ea0;
+    padding: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    color: white;
+    cursor: pointer;
+    transition: all 1s;
+    border-radius: 1em;
+    font-size: 1em;
+}
+
+#listado {
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    justify-content: space-between;
+    margin-left: 15em;
+    margin-right: 15em;
+}
+
+.peli {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    border: 0.2em solid lightgray;
+    border-radius: 1em;    
+    margin-top: 1em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    cursor: pointer;
+    width: 270px;
+}
+
+.peli h2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5em;
+}
+
+.peli img {
+    width: 185px;
+    height: 278px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.sinopsis {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 0.5em;
+    width: 260px;
+}
+.sinopsis p {
+    text-align: justify;
+}
+
+#tiempos {
+    margin-left: 1.5em;
+}
+#tiempos table{
+    border:1px solid #000000;
+    border-block-start-color: #33CCFF;
+    border-block-end-color: #0000CC;
+}
