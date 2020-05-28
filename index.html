@@ -4,28 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Movie DB Searcher</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="functions.js"></script>
+    <script src="functions.js" async></script>
 </head>
 <body>
-    <table class="cabecera" border="0">
-        <tr>
-            <td><h1>The movie DB Searcher</h1></td>
-            <td rowspan="2"><button type="button"  onclick="parent.location='populares.html'">Ver la más populares</button></td>            
-        </tr>
-        <tr>
-            <td><h2>Consulta cualquier película</h2></td>            
-        </tr>
-    </table>
+    <header>
+        <span onclick="muestraPeliculas(1)">Peliculas populares</span>
+        <span onclick="getPeliculasProximas()">Últimas peliculas</span>
+        <span class="lblTituloBuscar">Título a búscar: <input type="text" id="buscarTitulo" placeholder="Título de la película"></input>
+             <button type="button" onclick="buscaPeli()">Buscar</button> 
+        </span>        
+        <span onclick="CargaBenchmarks()">Benchmarks</span>
+    </header>
     
-    <div style="display: inline-block;">
-        <span class="lblTituloBuscar">Título a búscar:</span>
-        <input type="text" id="buscarTitulo" placeholder="Nombre de la película que estás buscando"></input>
-        <button type="button" class="botonBuscarTitulo" onclick="buscaPeli()">Buscar</button>        
-    </div>
-
-
-    <div id="listado" />
+    <main id="listado"></main>
+    
+    <footer>
+        <div>Tiempos de ejecución en ms.:
+            <table border="0">
+                <tr>
+                    <td>Inicio: </td>
+                    <td id="inicio">0</td>
+                    <td>Fin: </td>
+                    <td id="fin">0</td>
+                    <td>Diferencia: </td>
+                    <td id="diferencia">0</td>
+                </tr>
+            </table>
+        </div>
+    </footer>
 </body>
 </html>
