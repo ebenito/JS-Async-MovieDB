@@ -16,7 +16,7 @@ La idea de este ejercicio es practicar el uso de promesas en Javascript, junto c
 ## Instalacion
 
 - Todo el código es necesario para iniciar el proyecto
-- La imagenes, y sinposis de las peliculas son provehidas por The Movie DB
+- La imagenes, y sinposis de las peliculas son proporcionadas por The Movie DB
 
 ### Clonado
 
